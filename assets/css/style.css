@@ -203,15 +203,6 @@ body {
     font-weight: 500;
 }
 
-.header-top-center .brand-outer {
-    display: block;
-}
-
-.header-top-center .brand-outer .brand {
-    max-width: 150px;
-    width: 100%;
-}
-
 .header-top-right {
     display: flex;
     align-items: center;
@@ -241,9 +232,6 @@ body {
 
 /*Header css start*/
 .header-section {
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px;
     position: absolute;
     width: 100%;
@@ -263,12 +251,13 @@ body {
 .nav-items-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 70px;
     position: relative;
     background: rgba(255, 255, 255, 0.12);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 5%;
 }
 .nav-items-wrapper .nav-list {
   display: flex;
@@ -276,7 +265,7 @@ body {
   justify-content: center;
   margin-bottom: 0;
   height: 100%;
-  padding-left: 70px;
+  padding-left: 0px;
 }
 .nav-list .nav-item {
   height: 100%;
@@ -399,6 +388,52 @@ body {
     background: #000000;
     top: 7px;
 }
+.header-user-wrap {
+    height: 100%;
+    position: relative;
+}
+.header-user-link img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+}
+.header-user-link i {
+    margin-left: 10px;
+}
+.header-user-link:hover {
+    color: #e10f28;
+}
+
+.nav-item:first-child .nav-item-link {
+    padding-left: 0;
+}
+.header-bottom-left {
+    height: 100%;
+}
+.header-bottom-right {
+    height: 100%;
+}
+
+.header-user-wrap:hover .nav-item-submenu {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.header-user-link {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+}
 
     /*fixed header*/
 .fixed-header .nav-items-wrapper {
@@ -467,27 +502,13 @@ body {
     color: #fff;
 }
 
-.header-user-link {
-    position: relative;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px 17px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-transform: capitalize;
-}
-
 .header-two-right {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.header-user-wrap {
-    height: 100%;
-}
+
 
 .header-user-link img {
     width: 50px;
@@ -614,6 +635,8 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/book-appoitment-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/book-appoitment-bg.jpg);
 }
 .book-appointment-wrap {
     width: 100%;
@@ -622,7 +645,8 @@ body {
     background: #FFF;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.2);
 }
 .book-appointment-title {
     font-size: 30px;
@@ -793,10 +817,43 @@ body {
 /* Testimonial section css start */
 .testimonial-section {
     padding: 40px 0;
+    background: #22262e;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-section:before {
+    position: absolute;
+    content: '';
+    background: url(../images/footer-pattern.png);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    max-width: 600px;
+    min-height: 322px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    animation-name: float-bob;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: float-bob;
+    -webkit-animation-duration: 45s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.testimonial-section .section-title-outer .title {
+    color: #fff;
+}
+
+.testimonial-section .section-title-outer .text {
+    color: #fff;
 }
 
 .testimonial-item-outer {
-    background: hsl(218.57deg 30.43% 18.04%);
+    background: rgba(255, 255, 255, 0.16);
     border-radius: 10px;
     padding: 40px 25px 25px;
     margin-right: 10px;
