@@ -600,7 +600,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #fff;
     padding: 10px 20px;
-    margin-right: 6px;
+    width: 100%;
+    margin: 5px 0;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 600;
@@ -618,6 +619,52 @@ body {
 
 .department-items-wrapper {
     text-align: center;
+}
+
+.department-items-wrapper .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    transform: translateY(-50%);
+    background: #e4e4e4!important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.department-items-wrapper .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -4%;
+    transform: translateY(-50%);
+    background: #e4e4e4!important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.department-items-wrapper .owl-nav .owl-prev span {
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.department-items-wrapper .owl-nav .owl-next span {
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.department-items-wrapper .owl-nav .owl-prev:hover,
+.department-items-wrapper .owl-nav .owl-next:hover {
+    background: #e10f28!important;
+    color: #fff;
+}
+
+.department-items-wrapper .owl-nav .owl-prev:hover span,
+.department-items-wrapper .owl-nav .owl-next:hover span {
+    color: #fff;
 }
 /*Department section css End*/
 
