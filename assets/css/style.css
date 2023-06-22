@@ -587,6 +587,40 @@ body {
 }
 /*Home Two Intro sectino css End*/
 
+/*Department section css start*/
+.department-section {
+    margin-top: -60px;
+    z-index: 99;
+    position: relative;
+}
+
+.department-item-outer {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 6px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.department-item-outer:last-child {
+    margin-right: 0;
+}
+
+.department-item-outer:hover {
+    background: #fff;
+    color: #000;
+}
+
+.department-items-wrapper {
+    text-align: center;
+}
+/*Department section css End*/
+
 /*Search section css start*/
 .search-section {
     margin-top: 140px;
