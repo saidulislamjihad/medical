@@ -92,7 +92,9 @@ body {
 }
 
 .banner-section {
-    padding: 100px 0px;
+    background: url(../images/banner-bg.jpg);
+    padding-bottom: 70px;
+    padding-top: 180px;
     text-align: center;
     background-attachment: fixed;
     background-position: center center;
@@ -103,9 +105,9 @@ body {
 
 .banner-section .banner-title {
     display: flex;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #ffffff;
     margin-bottom: 0!important;
     text-align: center;
@@ -1346,3 +1348,99 @@ body {
     color: #ffa500;
 }
 /*Footer section css End*/
+
+
+/*Hospital Details page css start*/
+.hospital-details-section {
+    padding: 50px 0;
+}
+
+.hospital-details-sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e10f28;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.hospital-details-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.hospital-details-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000;
+}
+
+.department-list-wrapper {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+.department-list-link {
+    display: block;
+    border: 1px solid #F2F3F4;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.department-list-link:hover {
+    color: #d90110;
+    border: 1px solid #d9011069;
+    -webkit-box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.location-text-outer {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+
+.location-section {
+    padding: 40px 0;
+}
+
+.location-section .row {
+    margin-top: 20px;
+}
+
+.location-branch-name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+}
+
+.location-text {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 400;
+}
+
+.location-text i {
+    color: #d90110;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.location-text-outer:hover {
+    transform: scale(1.05);
+}
+/*Hospital Details page css End*/
